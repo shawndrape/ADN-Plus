@@ -1,0 +1,16 @@
+{   
+	"name": "ADN+",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Adds a Google+ button to posts on alpha.app.net",
+    "content_scripts": [
+    {
+    	"matches": [
+    		"https://alpha.app.net/*"
+    	],
+    	"js": ["contentscript.js"],
+    	"run_at": "document_idle",
+    	"all_frames": false
+    }
+    ]
+}
